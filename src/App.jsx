@@ -20,7 +20,6 @@ import { ThemeProvider } from "./context/ThemeContex";
 const App = () => {
   return (
     <>
-
   <ThemeProvider>
       <Navbar />
       <main className="footerPage">

@@ -35,8 +35,14 @@ h2 {
 }
 
 .dark {
-  background-color: #fff;
+  background-color: #000;
   color: white;
-  filter: invert(1)
+  /* filter: invert(1) */
   
 }
+
+.light{
+  background-color: blanchedalmond;
+  color: #000;
+}
+

@@ -3,34 +3,32 @@ import ThemeContext from "../../context/ThemeContex";
 import "./navbar_style.css";
 
 const Navbar = () => {
-  const{theme,handleTheme}=useContext(ThemeContext);
+  const { theme, handleTheme } = useContext(ThemeContext);
+  console.log(theme, "theme en navbar");
   return (
     <>
-    <nav className={theme} style={{color: "white"}}>
-      <h1>Ricky and Morty</h1>
-      
-      <input type="radio" 
-      name="theme" 
-      id="light-context" 
-      onClick={handleTheme} 
-      value= "light"
-      />
-      
-      <label htlmlFor="light-context">Light</label>
+      <nav className={theme}>
+        <h1>Ricky and Morty</h1>
+        <input
+          type="radio"
+          name="theme"
+          id="light-context"
+          onClick={handleTheme}
+          value="light"
+        />
 
-      <input
-      type="radio"
-      name="theme"
-      id="dark-context"
-      onClick={handleTheme}
-      value="dark"
-      />
+        <label htlmlFor="light-context">Light</label>
 
-      <label htmlFor="dark-context">Dark</label>
+        <input
+          type="radio"
+          name="theme"
+          id="dark-context"
+          onClick={handleTheme}
+          value="dark"
+        />
 
-
-
-    </nav>
+        <label htmlFor="dark-context">Dark</label>
+      </nav>
     </>
   );
 };
