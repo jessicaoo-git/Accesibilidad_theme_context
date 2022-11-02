@@ -33,3 +33,10 @@ h2 {
 .footerPage > div {
   padding: 80px 16px;
 }
+
+.dark {
+  background-color: #fff;
+  color: white;
+  filter: invert(1)
+  
+}

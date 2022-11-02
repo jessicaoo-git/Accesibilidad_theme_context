@@ -2,14 +2,23 @@
   background-color: rgb(243, 243, 243);
   text-align: center;
 }
+
+
 .about ul {
   list-style: none;
 }
+/*Agrege la propiedad line-height ya q el espacio entre líneas (interlineado) 
+es de, al menos, un espacio y medio dentro de los párrafos y el espacio entre
+párrafos es, al menos, 1.5 veces mayor que el espacio entre líneas. 
+CRITERIO 1.4.8  */
 
 .blockText {
   width: 40%;
   margin: 0 auto;
   font-size: 0.6rem;
+  line-height:150%
+  
+
 }
 
 .buttonAbout {

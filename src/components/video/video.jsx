@@ -5,7 +5,7 @@ o ajustar el volumen de cualquier audio que se reproduzca
 automáticamente durante más de 3 segundos en la interfaz.
 */
 
-import "./style.css";
+import "./video_style.css";
 
 const Video = () => {
   return (

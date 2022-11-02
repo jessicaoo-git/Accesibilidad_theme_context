@@ -6,13 +6,20 @@ de información en pantalla sin comprometer su legibilidad.
 
 */
 
-import "./style.css";
+
+
+import { useContext } from "react";
+import ThemeContext from "../../context/ThemeContex";
+import "./about_style.css";
 
 const About = () => {
+  const{theme}=useContext(ThemeContext);
+
+ 
   return (
-    <div>
-      <div className="blockText">
-        <p>Rick and Morty es una serie de animación.</p>
+    <div className={theme}>
+      <div className="blockText" align="left">
+        <p >Rick and Morty es una serie de animación.</p>
         <p>
           La serie se estrenó el 2 de diciembre de 2013 y muestra las peligrosas
           aventuras del científico alcohólico Rick y su nieto Morty, quien

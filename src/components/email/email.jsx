@@ -10,15 +10,18 @@ un mensaje de texto).
 
 */
 
-import "./style.css";
+import { useContext } from "react";
+import ThemeContext from "../../context/ThemeContex";
+import "./emails_style.css";
 
 const Email = () => {
+  const{theme}=useContext(ThemeContext);
   return (
     // Se debe verificar si el campo de
     // el correo electrónico contiene algo escrito. Si no, debe
     // marcar un error en el input.
     // Para esto se puede utilizar en el input de correo electrónico el atributo "required".
-    <form>
+    <form className={theme}>
       <input type="email" placeholder="Ingresá tu email aquí" />
       <button type="submit">Enviar</button>
     </form>
